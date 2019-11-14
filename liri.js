@@ -69,7 +69,7 @@ function bandsintownLIRI(query){
       .get(`https://rest.bandsintown.com/artists/${query}/events?app_id=${keys.modules.bandsintown}`)
       .then(function(response) {
         // handle success
-        console.log(response.data);
+        //console.log(response.data);
         let concerts = response.data
         for(i=0;i<concerts.length;i++){
             console.log(`Band/Artist Lineup: ${concerts[i].lineup}`)
